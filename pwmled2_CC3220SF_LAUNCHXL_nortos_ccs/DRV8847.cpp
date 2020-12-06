@@ -34,8 +34,31 @@ void DRV8847::openLoopDispense(uint8_t components){
 }
 
 void DRV8847::closedLoopDispense(uint8_t components){
-    uint8_t holes_to_pass = (uint8_t) components * this->component_spacing / HOLE_SPACING; // number of holes to pass by
-    uint8_t extra_tape = (uint8_t) components * this->component_spacing % HOLE_SPACING;
+    // calculate number of holes to pass by and additional tape to dispense
+    double currentPosition = this->estimatePosition();
+    uint8_t holes_to_pass = (uint8_t) components * this->component_spacing / HOLE_SPACING; // number of holes to pass by if starting lined up with sensor 1
+    double remainder = (components * this->component_spacing) - HOLE_SPACING*holes_to_pass; // extra
+    double endingPosition = remainder + currentPosition;
+    if(endingPosition < 0){
+        holes_to_pass--;
+        endingPosition += HOLE_SPACING;
+    }
+    else if(endingPosition > HOLE_SPACING){
+        holes_to_pass++;
+        endingPosition -= HOLE_SPACING;
+    }
+
+    // reset count used by interrupts
+    global_count = 0;
+
+    // set up interrupt
+    this->light_sensor1.setHighLimit(this->high_light_value);
+    GPIO_
+
+    while(global_count < holes_to_pass){
+        this->drive(1);
+    }
+
 }
 
 void DRV8847::driverEnable(){
@@ -46,9 +69,16 @@ void DRV8847::driverDisable(){
     GPIO_write(this->enable, 0);
 }
 
-void DRV8847::enableSensors(I2C_Handle i2c){
+void DRV8847::enableSensors(I2C_Handle i2c, uint8_t light_int_pin){
+    this->light_int = light_int_pin;
+    GPIO_setConfig(this->light_int, GPIO_CFG_IN_STD);
+    GPIO_setCallback(this->light_int, high_thresh_cb);
     this->light_sensor1.init(i2c, OPT3001::SlaveAddress::ADDRPIN_GND, NULL);
     this->light_sensor2.init(i2c, OPT3001::SlaveAddress::ADDRPIN_VDD, NULL);
+    this->light_sensor1.setLowLimit(0);
+    this->light_sensor1.setHighLimit(this->high_light_value);
+    this->light_sensor2.setLowLimit(0);
+    this->light_sensor2.setHighLimit(0xFFFFFFFFFFFFFFFF);
 }
 
 void DRV8847::drive(uint8_t steps){
@@ -63,4 +93,10 @@ void DRV8847::drive(uint8_t steps){
     }
 }
 
-int8_t DRV8847::es
+double DRV8847::estimatePosition(){
+    uint32_t sensor_value1 = this->light_sensor1.getResult();
+    uint32_t sensor_value2 = this->light_sensor2.getResult();
+    double abs_offset = ((sensor_value1 - this->low_light_value) /(this->high_light_value - this->low_light_value))* HOLE_SPACING;
+    int8_t sign = sensor_value2 > ((high_light_value-low_light_value)/2) ? 1 : -1;
+    return (abs_offset * sign);
+}

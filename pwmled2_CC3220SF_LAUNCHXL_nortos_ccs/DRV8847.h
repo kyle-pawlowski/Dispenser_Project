@@ -11,7 +11,9 @@
 
 #include <OPT3001.h>
 
-#define LIGHT_SENSOR_THRESHOLD 50
+#define HIGH_LIGHT_VALUE 50
+#define LOW_LIGHT_VALUE 0
+
 #define HOLE_SPACING 4 // in mm
 
 const uint8_t drive_seq [2][4] = { {1, 1, 0, 0}, {0, 1, 1, 0} };
@@ -48,8 +50,11 @@ private:
     uint8_t in1;
     uint8_t in2;
     uint8_t enable;
+    uint8_t light_int;
     OPT3001 light_sensor1;
     OPT3001 light_sensor2;
+    uint32_t high_light_value = 50;
+    uint32_t low_light_value = 0;
     void drive(uint8_t steps);
 
     /* estimate the position of the tape from the
@@ -58,7 +63,7 @@ private:
      * the distance in mm the tape is away from being aligned
      * with light_sensor1
      */
-    int8_t estimatePosition();
+    double estimatePosition();
 };
 
 #endif //DRV8847_H
