@@ -33,6 +33,8 @@ public:
      */
     void setTapePerStep(uint8_t factor); // factor in mm
 
+    void setHighLightValue(uint32_t value);
+
     void openLoopDispense(uint8_t components);
 
     void closedLoopDispense(uint8_t components);
@@ -41,7 +43,7 @@ public:
 
     void driverDisable();
 
-    void enableSensors(I2C_Handle i2c);
+    void enableSensors(I2C_Handle i2c, uint8_t light_int_pin);
 
 private:
     uint8_t component_spacing = 0;

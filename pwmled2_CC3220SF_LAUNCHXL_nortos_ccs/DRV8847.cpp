@@ -2,6 +2,10 @@
 
 uint8_t global_count = 0;
 
+static void lightThreshCallback(uint_least8_t index){
+    global_count++;
+}
+
 DRV8847::DRV8847(uint8_t in1_pin, uint8_t in2_pin, uint8_t enable_pin){
     this->in1 = in1_pin;
     this->in2 = in2_pin;
@@ -28,6 +32,11 @@ void DRV8847::setTapePerStep(uint8_t factor){
     this->tape_per_step = factor;
 }
 
+void DRV8847::setHighLightValue(uint32_t value){
+    this->high_light_value = value;
+    this->light_sensor1.setHighLimit(this->light_sensor1.parseLux(this->high_light_value));
+}
+
 void DRV8847::openLoopDispense(uint8_t components){
     uint8_t steps = (uint8_t)(components * this->component_spacing)/this->tape_per_step;
     this->drive(steps);
@@ -35,10 +44,12 @@ void DRV8847::openLoopDispense(uint8_t components){
 
 void DRV8847::closedLoopDispense(uint8_t components){
     // calculate number of holes to pass by and additional tape to dispense
-    double currentPosition = this->estimatePosition();
+    double currentPosition = this->estimatePosition(); // offset from lined up with sensor 1
     uint8_t holes_to_pass = (uint8_t) components * this->component_spacing / HOLE_SPACING; // number of holes to pass by if starting lined up with sensor 1
-    double remainder = (components * this->component_spacing) - HOLE_SPACING*holes_to_pass; // extra
-    double endingPosition = remainder + currentPosition;
+    double remainder = (components * this->component_spacing) - HOLE_SPACING*holes_to_pass; // extra distance
+    double endingPosition = remainder + currentPosition; // extra distance + initial offset = total offset
+
+    // adjust number of holes based on total offset
     if(endingPosition < 0){
         holes_to_pass--;
         endingPosition += HOLE_SPACING;
@@ -52,13 +63,17 @@ void DRV8847::closedLoopDispense(uint8_t components){
     global_count = 0;
 
     // set up interrupt
-    this->light_sensor1.setHighLimit(this->high_light_value);
-    GPIO_
+    GPIO_enableInt(this->light_int);
 
-    while(global_count < holes_to_pass){
-        this->drive(1);
+    while(global_count < holes_to_pass){ // check global count which in incremented by interrupts
+        this->drive(1); // step and check for interrupts
+        usleep(1000);
     }
 
+    GPIO_disableInt(this->light_int);
+
+    uint8_t extra_steps = endingPosition * this->tape_per_step;
+    this->drive(extra_steps);
 }
 
 void DRV8847::driverEnable(){
@@ -71,14 +86,14 @@ void DRV8847::driverDisable(){
 
 void DRV8847::enableSensors(I2C_Handle i2c, uint8_t light_int_pin){
     this->light_int = light_int_pin;
-    GPIO_setConfig(this->light_int, GPIO_CFG_IN_STD);
-    GPIO_setCallback(this->light_int, high_thresh_cb);
+    //GPIO_setConfig(this->light_int, GPIO_CFG_IN_STD);
+    GPIO_setCallback(this->light_int, lightThreshCallback);
     this->light_sensor1.init(i2c, OPT3001::SlaveAddress::ADDRPIN_GND, NULL);
     this->light_sensor2.init(i2c, OPT3001::SlaveAddress::ADDRPIN_VDD, NULL);
-    this->light_sensor1.setLowLimit(0);
-    this->light_sensor1.setHighLimit(this->high_light_value);
-    this->light_sensor2.setLowLimit(0);
-    this->light_sensor2.setHighLimit(0xFFFFFFFFFFFFFFFF);
+    this->light_sensor1.setLowLimit(this->light_sensor1.parseLux(0));
+    this->light_sensor1.setHighLimit(this->light_sensor1.parseLux(this->high_light_value));
+    this->light_sensor2.setLowLimit(this->light_sensor2.parseLux(0));
+    this->light_sensor2.setHighLimit(this->light_sensor2.parseLux(0xFFFFFFFFFFFFFFFF));
 }
 
 void DRV8847::drive(uint8_t steps){
