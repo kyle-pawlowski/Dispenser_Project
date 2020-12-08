@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/core_pkcs11_mbedtls.c 
+
+C_DEPS += \
+./libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/core_pkcs11_mbedtls.d 
+
+OBJS += \
+./libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/core_pkcs11_mbedtls.obj 
+
+OBJS__QUOTED += \
+"libraries\abstractions\pkcs11\corePKCS11\source\portable\mbedtls\core_pkcs11_mbedtls.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\abstractions\pkcs11\corePKCS11\source\portable\mbedtls\core_pkcs11_mbedtls.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/core_pkcs11_mbedtls.c" 
+
+

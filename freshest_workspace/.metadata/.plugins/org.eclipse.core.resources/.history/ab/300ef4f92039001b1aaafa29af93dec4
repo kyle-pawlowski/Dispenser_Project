@@ -1,0 +1,44 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_clock_freertos.c \
+C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_metrics.c \
+C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_network_freertos.c \
+C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_threads_freertos.c 
+
+C_DEPS += \
+./libraries/abstractions/platform/freertos/iot_clock_freertos.d \
+./libraries/abstractions/platform/freertos/iot_metrics.d \
+./libraries/abstractions/platform/freertos/iot_network_freertos.d \
+./libraries/abstractions/platform/freertos/iot_threads_freertos.d 
+
+OBJS += \
+./libraries/abstractions/platform/freertos/iot_clock_freertos.obj \
+./libraries/abstractions/platform/freertos/iot_metrics.obj \
+./libraries/abstractions/platform/freertos/iot_network_freertos.obj \
+./libraries/abstractions/platform/freertos/iot_threads_freertos.obj 
+
+OBJS__QUOTED += \
+"libraries\abstractions\platform\freertos\iot_clock_freertos.obj" \
+"libraries\abstractions\platform\freertos\iot_metrics.obj" \
+"libraries\abstractions\platform\freertos\iot_network_freertos.obj" \
+"libraries\abstractions\platform\freertos\iot_threads_freertos.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\abstractions\platform\freertos\iot_clock_freertos.d" \
+"libraries\abstractions\platform\freertos\iot_metrics.d" \
+"libraries\abstractions\platform\freertos\iot_network_freertos.d" \
+"libraries\abstractions\platform\freertos\iot_threads_freertos.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_clock_freertos.c" \
+"C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_metrics.c" \
+"C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_network_freertos.c" \
+"C:/ti/FreeRTOS/libraries/abstractions/platform/freertos/iot_threads_freertos.c" 
+
+

@@ -1,0 +1,38 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/c_sdk/standard/common/iot_device_metrics.c \
+C:/ti/FreeRTOS/libraries/c_sdk/standard/common/iot_init.c \
+C:/ti/FreeRTOS/libraries/c_sdk/standard/common/iot_static_memory_common.c 
+
+C_DEPS += \
+./libraries/c_sdk/standard/common/iot_device_metrics.d \
+./libraries/c_sdk/standard/common/iot_init.d \
+./libraries/c_sdk/standard/common/iot_static_memory_common.d 
+
+OBJS += \
+./libraries/c_sdk/standard/common/iot_device_metrics.obj \
+./libraries/c_sdk/standard/common/iot_init.obj \
+./libraries/c_sdk/standard/common/iot_static_memory_common.obj 
+
+OBJS__QUOTED += \
+"libraries\c_sdk\standard\common\iot_device_metrics.obj" \
+"libraries\c_sdk\standard\common\iot_init.obj" \
+"libraries\c_sdk\standard\common\iot_static_memory_common.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\c_sdk\standard\common\iot_device_metrics.d" \
+"libraries\c_sdk\standard\common\iot_init.d" \
+"libraries\c_sdk\standard\common\iot_static_memory_common.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/c_sdk/standard/common/iot_device_metrics.c" \
+"C:/ti/FreeRTOS/libraries/c_sdk/standard/common/iot_init.c" \
+"C:/ti/FreeRTOS/libraries/c_sdk/standard/common/iot_static_memory_common.c" 
+
+

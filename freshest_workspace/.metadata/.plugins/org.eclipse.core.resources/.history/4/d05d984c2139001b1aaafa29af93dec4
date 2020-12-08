@@ -1,0 +1,44 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/demos/demo_runner/aws_demo.c \
+C:/ti/FreeRTOS/demos/demo_runner/aws_demo_version.c \
+C:/ti/FreeRTOS/demos/demo_runner/iot_demo_freertos.c \
+C:/ti/FreeRTOS/demos/demo_runner/iot_demo_runner.c 
+
+C_DEPS += \
+./demos/demo_runner/aws_demo.d \
+./demos/demo_runner/aws_demo_version.d \
+./demos/demo_runner/iot_demo_freertos.d \
+./demos/demo_runner/iot_demo_runner.d 
+
+OBJS += \
+./demos/demo_runner/aws_demo.obj \
+./demos/demo_runner/aws_demo_version.obj \
+./demos/demo_runner/iot_demo_freertos.obj \
+./demos/demo_runner/iot_demo_runner.obj 
+
+OBJS__QUOTED += \
+"demos\demo_runner\aws_demo.obj" \
+"demos\demo_runner\aws_demo_version.obj" \
+"demos\demo_runner\iot_demo_freertos.obj" \
+"demos\demo_runner\iot_demo_runner.obj" 
+
+C_DEPS__QUOTED += \
+"demos\demo_runner\aws_demo.d" \
+"demos\demo_runner\aws_demo_version.d" \
+"demos\demo_runner\iot_demo_freertos.d" \
+"demos\demo_runner\iot_demo_runner.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/demos/demo_runner/aws_demo.c" \
+"C:/ti/FreeRTOS/demos/demo_runner/aws_demo_version.c" \
+"C:/ti/FreeRTOS/demos/demo_runner/iot_demo_freertos.c" \
+"C:/ti/FreeRTOS/demos/demo_runner/iot_demo_runner.c" 
+
+

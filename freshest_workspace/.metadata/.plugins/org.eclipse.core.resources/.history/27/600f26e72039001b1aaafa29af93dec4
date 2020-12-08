@@ -1,0 +1,38 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/coreMQTT/source/core_mqtt.c \
+C:/ti/FreeRTOS/libraries/coreMQTT/source/core_mqtt_serializer.c \
+C:/ti/FreeRTOS/libraries/coreMQTT/source/core_mqtt_state.c 
+
+C_DEPS += \
+./libraries/coreMQTT/source/core_mqtt.d \
+./libraries/coreMQTT/source/core_mqtt_serializer.d \
+./libraries/coreMQTT/source/core_mqtt_state.d 
+
+OBJS += \
+./libraries/coreMQTT/source/core_mqtt.obj \
+./libraries/coreMQTT/source/core_mqtt_serializer.obj \
+./libraries/coreMQTT/source/core_mqtt_state.obj 
+
+OBJS__QUOTED += \
+"libraries\coreMQTT\source\core_mqtt.obj" \
+"libraries\coreMQTT\source\core_mqtt_serializer.obj" \
+"libraries\coreMQTT\source\core_mqtt_state.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\coreMQTT\source\core_mqtt.d" \
+"libraries\coreMQTT\source\core_mqtt_serializer.d" \
+"libraries\coreMQTT\source\core_mqtt_state.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/coreMQTT/source/core_mqtt.c" \
+"C:/ti/FreeRTOS/libraries/coreMQTT/source/core_mqtt_serializer.c" \
+"C:/ti/FreeRTOS/libraries/coreMQTT/source/core_mqtt_state.c" 
+
+

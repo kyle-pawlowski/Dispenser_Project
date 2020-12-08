@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/vendors/ti/boards/cc3220_launchpad/ports/pkcs11/core_pkcs11_pal.c 
+
+C_DEPS += \
+./vendors/ti/boards/cc3220_launchpad/ports/pkcs11/core_pkcs11_pal.d 
+
+OBJS += \
+./vendors/ti/boards/cc3220_launchpad/ports/pkcs11/core_pkcs11_pal.obj 
+
+OBJS__QUOTED += \
+"vendors\ti\boards\cc3220_launchpad\ports\pkcs11\core_pkcs11_pal.obj" 
+
+C_DEPS__QUOTED += \
+"vendors\ti\boards\cc3220_launchpad\ports\pkcs11\core_pkcs11_pal.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/vendors/ti/boards/cc3220_launchpad/ports/pkcs11/core_pkcs11_pal.c" 
+
+

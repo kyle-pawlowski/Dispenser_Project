@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/utils/src/iot_system_init.c 
+
+C_DEPS += \
+./libraries/freertos_plus/standard/utils/src/iot_system_init.d 
+
+OBJS += \
+./libraries/freertos_plus/standard/utils/src/iot_system_init.obj 
+
+OBJS__QUOTED += \
+"libraries\freertos_plus\standard\utils\src\iot_system_init.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\freertos_plus\standard\utils\src\iot_system_init.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/utils/src/iot_system_init.c" 
+
+

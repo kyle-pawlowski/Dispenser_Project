@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/logging/iot_logging.c \
+C:/ti/FreeRTOS/libraries/logging/iot_logging_task_dynamic_buffers.c 
+
+C_DEPS += \
+./libraries/logging/iot_logging.d \
+./libraries/logging/iot_logging_task_dynamic_buffers.d 
+
+OBJS += \
+./libraries/logging/iot_logging.obj \
+./libraries/logging/iot_logging_task_dynamic_buffers.obj 
+
+OBJS__QUOTED += \
+"libraries\logging\iot_logging.obj" \
+"libraries\logging\iot_logging_task_dynamic_buffers.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\logging\iot_logging.d" \
+"libraries\logging\iot_logging_task_dynamic_buffers.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/logging/iot_logging.c" \
+"C:/ti/FreeRTOS/libraries/logging/iot_logging_task_dynamic_buffers.c" 
+
+

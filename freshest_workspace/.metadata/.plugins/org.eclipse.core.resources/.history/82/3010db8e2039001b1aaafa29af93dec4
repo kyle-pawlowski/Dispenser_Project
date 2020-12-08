@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//Debug/application_code/subdir_rules.mk=UTF-8
+encoding//Debug/application_code/subdir_vars.mk=UTF-8
+encoding//Debug/application_code/ti_code/subdir_rules.mk=UTF-8
+encoding//Debug/application_code/ti_code/subdir_vars.mk=UTF-8
+encoding//Debug/demos/coreMQTT/subdir_rules.mk=UTF-8
+encoding//Debug/demos/coreMQTT/subdir_vars.mk=UTF-8
+encoding//Debug/demos/demo_runner/subdir_rules.mk=UTF-8
+encoding//Debug/demos/demo_runner/subdir_vars.mk=UTF-8
+encoding//Debug/demos/dev_mode_key_provisioning/src/subdir_rules.mk=UTF-8
+encoding//Debug/demos/dev_mode_key_provisioning/src/subdir_vars.mk=UTF-8
+encoding//Debug/sources.mk=UTF-8

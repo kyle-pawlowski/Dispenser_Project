@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/iot_secure_sockets.c 
+
+C_DEPS += \
+./vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/iot_secure_sockets.d 
+
+OBJS += \
+./vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/iot_secure_sockets.obj 
+
+OBJS__QUOTED += \
+"vendors\ti\boards\cc3220_launchpad\ports\secure_sockets\iot_secure_sockets.obj" 
+
+C_DEPS__QUOTED += \
+"vendors\ti\boards\cc3220_launchpad\ports\secure_sockets\iot_secure_sockets.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/iot_secure_sockets.c" 
+
+

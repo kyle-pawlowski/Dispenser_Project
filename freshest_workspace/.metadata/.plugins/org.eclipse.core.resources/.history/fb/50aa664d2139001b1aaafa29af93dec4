@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/abstractions/retry_utils/freertos/retry_utils_freertos.c 
+
+C_DEPS += \
+./libraries/abstractions/retry_utils/freertos/retry_utils_freertos.d 
+
+OBJS += \
+./libraries/abstractions/retry_utils/freertos/retry_utils_freertos.obj 
+
+OBJS__QUOTED += \
+"libraries\abstractions\retry_utils\freertos\retry_utils_freertos.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\abstractions\retry_utils\freertos\retry_utils_freertos.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/abstractions/retry_utils/freertos/retry_utils_freertos.c" 
+
+

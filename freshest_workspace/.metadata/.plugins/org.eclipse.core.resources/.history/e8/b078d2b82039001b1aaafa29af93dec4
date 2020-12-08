@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/demos/network_manager/aws_iot_demo_network.c \
+C:/ti/FreeRTOS/demos/network_manager/aws_iot_network_manager.c 
+
+C_DEPS += \
+./demos/network_manager/aws_iot_demo_network.d \
+./demos/network_manager/aws_iot_network_manager.d 
+
+OBJS += \
+./demos/network_manager/aws_iot_demo_network.obj \
+./demos/network_manager/aws_iot_network_manager.obj 
+
+OBJS__QUOTED += \
+"demos\network_manager\aws_iot_demo_network.obj" \
+"demos\network_manager\aws_iot_network_manager.obj" 
+
+C_DEPS__QUOTED += \
+"demos\network_manager\aws_iot_demo_network.d" \
+"demos\network_manager\aws_iot_network_manager.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/demos/network_manager/aws_iot_demo_network.c" \
+"C:/ti/FreeRTOS/demos/network_manager/aws_iot_network_manager.c" 
+
+

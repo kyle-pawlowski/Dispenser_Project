@@ -1,0 +1,395 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+CG_TOOL_ROOT := C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS
+
+GEN_OPTS__FLAG := 
+GEN_CMDS__FLAG := 
+
+ORDERED_OBJS += \
+"./application_code/main.obj" \
+"./application_code/ti_code/CC3220SF_LAUNCHXL.obj" \
+"./application_code/ti_code/network_if.obj" \
+"./application_code/ti_code/uart_term.obj" \
+"./demos/coreMQTT/mqtt_demo_connection_sharing.obj" \
+"./demos/coreMQTT/mqtt_demo_mutual_auth.obj" \
+"./demos/demo_runner/aws_demo.obj" \
+"./demos/demo_runner/aws_demo_version.obj" \
+"./demos/demo_runner/iot_demo_freertos.obj" \
+"./demos/demo_runner/iot_demo_runner.obj" \
+"./demos/dev_mode_key_provisioning/src/aws_dev_mode_key_provisioning.obj" \
+"./demos/network_manager/aws_iot_demo_network.obj" \
+"./demos/network_manager/aws_iot_network_manager.obj" \
+"./demos/tcp/aws_tcp_echo_client_single_task.obj" \
+"./freertos_kernel/event_groups.obj" \
+"./freertos_kernel/list.obj" \
+"./freertos_kernel/queue.obj" \
+"./freertos_kernel/stream_buffer.obj" \
+"./freertos_kernel/tasks.obj" \
+"./freertos_kernel/timers.obj" \
+"./freertos_kernel/portable/CCS/ARM_CM3/port.obj" \
+"./freertos_kernel/portable/CCS/ARM_CM3/portasm.obj" \
+"./freertos_kernel/portable/MemMang/heap_4.obj" \
+"./libraries/3rdparty/mbedtls/library/aes.obj" \
+"./libraries/3rdparty/mbedtls/library/aesni.obj" \
+"./libraries/3rdparty/mbedtls/library/arc4.obj" \
+"./libraries/3rdparty/mbedtls/library/aria.obj" \
+"./libraries/3rdparty/mbedtls/library/asn1parse.obj" \
+"./libraries/3rdparty/mbedtls/library/asn1write.obj" \
+"./libraries/3rdparty/mbedtls/library/base64.obj" \
+"./libraries/3rdparty/mbedtls/library/bignum.obj" \
+"./libraries/3rdparty/mbedtls/library/blowfish.obj" \
+"./libraries/3rdparty/mbedtls/library/camellia.obj" \
+"./libraries/3rdparty/mbedtls/library/ccm.obj" \
+"./libraries/3rdparty/mbedtls/library/certs.obj" \
+"./libraries/3rdparty/mbedtls/library/chacha20.obj" \
+"./libraries/3rdparty/mbedtls/library/chachapoly.obj" \
+"./libraries/3rdparty/mbedtls/library/cipher.obj" \
+"./libraries/3rdparty/mbedtls/library/cipher_wrap.obj" \
+"./libraries/3rdparty/mbedtls/library/cmac.obj" \
+"./libraries/3rdparty/mbedtls/library/ctr_drbg.obj" \
+"./libraries/3rdparty/mbedtls/library/debug.obj" \
+"./libraries/3rdparty/mbedtls/library/des.obj" \
+"./libraries/3rdparty/mbedtls/library/dhm.obj" \
+"./libraries/3rdparty/mbedtls/library/ecdh.obj" \
+"./libraries/3rdparty/mbedtls/library/ecdsa.obj" \
+"./libraries/3rdparty/mbedtls/library/ecjpake.obj" \
+"./libraries/3rdparty/mbedtls/library/ecp.obj" \
+"./libraries/3rdparty/mbedtls/library/ecp_curves.obj" \
+"./libraries/3rdparty/mbedtls/library/entropy.obj" \
+"./libraries/3rdparty/mbedtls/library/entropy_poll.obj" \
+"./libraries/3rdparty/mbedtls/library/error.obj" \
+"./libraries/3rdparty/mbedtls/library/gcm.obj" \
+"./libraries/3rdparty/mbedtls/library/havege.obj" \
+"./libraries/3rdparty/mbedtls/library/hkdf.obj" \
+"./libraries/3rdparty/mbedtls/library/hmac_drbg.obj" \
+"./libraries/3rdparty/mbedtls/library/md.obj" \
+"./libraries/3rdparty/mbedtls/library/md2.obj" \
+"./libraries/3rdparty/mbedtls/library/md4.obj" \
+"./libraries/3rdparty/mbedtls/library/md5.obj" \
+"./libraries/3rdparty/mbedtls/library/md_wrap.obj" \
+"./libraries/3rdparty/mbedtls/library/memory_buffer_alloc.obj" \
+"./libraries/3rdparty/mbedtls/library/net_sockets.obj" \
+"./libraries/3rdparty/mbedtls/library/nist_kw.obj" \
+"./libraries/3rdparty/mbedtls/library/oid.obj" \
+"./libraries/3rdparty/mbedtls/library/padlock.obj" \
+"./libraries/3rdparty/mbedtls/library/pem.obj" \
+"./libraries/3rdparty/mbedtls/library/pk.obj" \
+"./libraries/3rdparty/mbedtls/library/pk_wrap.obj" \
+"./libraries/3rdparty/mbedtls/library/pkcs11.obj" \
+"./libraries/3rdparty/mbedtls/library/pkcs12.obj" \
+"./libraries/3rdparty/mbedtls/library/pkcs5.obj" \
+"./libraries/3rdparty/mbedtls/library/pkparse.obj" \
+"./libraries/3rdparty/mbedtls/library/pkwrite.obj" \
+"./libraries/3rdparty/mbedtls/library/platform.obj" \
+"./libraries/3rdparty/mbedtls/library/platform_util.obj" \
+"./libraries/3rdparty/mbedtls/library/poly1305.obj" \
+"./libraries/3rdparty/mbedtls/library/ripemd160.obj" \
+"./libraries/3rdparty/mbedtls/library/rsa.obj" \
+"./libraries/3rdparty/mbedtls/library/rsa_internal.obj" \
+"./libraries/3rdparty/mbedtls/library/sha1.obj" \
+"./libraries/3rdparty/mbedtls/library/sha256.obj" \
+"./libraries/3rdparty/mbedtls/library/sha512.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_cache.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_ciphersuites.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_cli.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_cookie.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_srv.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_ticket.obj" \
+"./libraries/3rdparty/mbedtls/library/ssl_tls.obj" \
+"./libraries/3rdparty/mbedtls/library/threading.obj" \
+"./libraries/3rdparty/mbedtls/library/timing.obj" \
+"./libraries/3rdparty/mbedtls/library/version.obj" \
+"./libraries/3rdparty/mbedtls/library/version_features.obj" \
+"./libraries/3rdparty/mbedtls/library/x509.obj" \
+"./libraries/3rdparty/mbedtls/library/x509_create.obj" \
+"./libraries/3rdparty/mbedtls/library/x509_crl.obj" \
+"./libraries/3rdparty/mbedtls/library/x509_crt.obj" \
+"./libraries/3rdparty/mbedtls/library/x509_csr.obj" \
+"./libraries/3rdparty/mbedtls/library/x509write_crt.obj" \
+"./libraries/3rdparty/mbedtls/library/x509write_csr.obj" \
+"./libraries/3rdparty/mbedtls/library/xtea.obj" \
+"./libraries/3rdparty/mbedtls_utils/mbedtls_error.obj" \
+"./libraries/3rdparty/mbedtls_utils/mbedtls_utils.obj" \
+"./libraries/abstractions/pkcs11/corePKCS11/source/core_pkcs11.obj" \
+"./libraries/abstractions/pkcs11/corePKCS11/source/core_pki_utils.obj" \
+"./libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/core_pkcs11_mbedtls.obj" \
+"./libraries/abstractions/platform/freertos/iot_clock_freertos.obj" \
+"./libraries/abstractions/platform/freertos/iot_metrics.obj" \
+"./libraries/abstractions/platform/freertos/iot_network_freertos.obj" \
+"./libraries/abstractions/platform/freertos/iot_threads_freertos.obj" \
+"./libraries/abstractions/retry_utils/freertos/retry_utils_freertos.obj" \
+"./libraries/abstractions/transport/secure_sockets/transport_secure_sockets.obj" \
+"./libraries/c_sdk/standard/common/iot_device_metrics.obj" \
+"./libraries/c_sdk/standard/common/iot_init.obj" \
+"./libraries/c_sdk/standard/common/iot_static_memory_common.obj" \
+"./libraries/c_sdk/standard/common/taskpool/iot_taskpool.obj" \
+"./libraries/c_sdk/standard/common/taskpool/iot_taskpool_static_memory.obj" \
+"./libraries/coreMQTT/source/core_mqtt.obj" \
+"./libraries/coreMQTT/source/core_mqtt_serializer.obj" \
+"./libraries/coreMQTT/source/core_mqtt_state.obj" \
+"./libraries/freertos_plus/standard/crypto/src/iot_crypto.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_clock.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_mqueue.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_barrier.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_cond.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_mutex.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_sched.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_semaphore.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_timer.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_unistd.obj" \
+"./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_utils.obj" \
+"./libraries/freertos_plus/standard/utils/src/iot_system_init.obj" \
+"./libraries/logging/iot_logging.obj" \
+"./libraries/logging/iot_logging_task_dynamic_buffers.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/ClockP_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/DebugP_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/HwiPCC32XX_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/MutexP_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/PowerCC32XX_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/SemaphoreP_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/SystemP_freertos.obj" \
+"./vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/startup/startup_cc32xx_ccs.obj" \
+"./vendors/ti/boards/cc3220_launchpad/ports/pkcs11/core_pkcs11_pal.obj" \
+"./vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/iot_secure_sockets.obj" \
+"./vendors/ti/boards/cc3220_launchpad/ports/wifi/iot_wifi.obj" \
+"C:/ti/FreeRTOS/vendors/ti/boards/cc3220_launchpad/aws_demos/application_code/ti_code/CC3220SF_LAUNCHXL_FREERTOS.cmd" \
+$(GEN_CMDS__FLAG) \
+-llibc.a \
+-l"C:/ti/FreeRTOS/vendors/ti/SimpleLink_CC32xx/v2_10_00_04/source/ti/devices/cc32xx/driverlib/ccs/Release/driverlib.a" \
+-l"C:/ti/FreeRTOS/vendors/ti/SimpleLink_CC32xx/v2_10_00_04/source/ti/drivers/lib/drivers_cc32xx.aem4" \
+-l"C:/ti/FreeRTOS/vendors/ti/SimpleLink_CC32xx/v2_10_00_04/source/ti/drivers/net/wifi/ccs/rtos/simplelink.a" \
+
+-include ../makefile.init
+
+RM := DEL /F
+RMDIR := RMDIR /S/Q
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include application_code/subdir_vars.mk
+-include application_code/ti_code/subdir_vars.mk
+-include demos/coreMQTT/subdir_vars.mk
+-include demos/demo_runner/subdir_vars.mk
+-include demos/dev_mode_key_provisioning/src/subdir_vars.mk
+-include demos/network_manager/subdir_vars.mk
+-include demos/tcp/subdir_vars.mk
+-include freertos_kernel/subdir_vars.mk
+-include freertos_kernel/portable/CCS/ARM_CM3/subdir_vars.mk
+-include freertos_kernel/portable/MemMang/subdir_vars.mk
+-include libraries/3rdparty/mbedtls/library/subdir_vars.mk
+-include libraries/3rdparty/mbedtls_utils/subdir_vars.mk
+-include libraries/abstractions/pkcs11/corePKCS11/source/subdir_vars.mk
+-include libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/subdir_vars.mk
+-include libraries/abstractions/platform/freertos/subdir_vars.mk
+-include libraries/abstractions/retry_utils/freertos/subdir_vars.mk
+-include libraries/abstractions/transport/secure_sockets/subdir_vars.mk
+-include libraries/c_sdk/standard/common/subdir_vars.mk
+-include libraries/c_sdk/standard/common/taskpool/subdir_vars.mk
+-include libraries/coreMQTT/source/subdir_vars.mk
+-include libraries/freertos_plus/standard/crypto/src/subdir_vars.mk
+-include libraries/freertos_plus/standard/freertos_plus_posix/source/subdir_vars.mk
+-include libraries/freertos_plus/standard/utils/src/subdir_vars.mk
+-include libraries/logging/subdir_vars.mk
+-include vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/subdir_vars.mk
+-include vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/startup/subdir_vars.mk
+-include vendors/ti/boards/cc3220_launchpad/ports/pkcs11/subdir_vars.mk
+-include vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/subdir_vars.mk
+-include vendors/ti/boards/cc3220_launchpad/ports/wifi/subdir_vars.mk
+-include application_code/subdir_rules.mk
+-include application_code/ti_code/subdir_rules.mk
+-include demos/coreMQTT/subdir_rules.mk
+-include demos/demo_runner/subdir_rules.mk
+-include demos/dev_mode_key_provisioning/src/subdir_rules.mk
+-include demos/network_manager/subdir_rules.mk
+-include demos/tcp/subdir_rules.mk
+-include freertos_kernel/subdir_rules.mk
+-include freertos_kernel/portable/CCS/ARM_CM3/subdir_rules.mk
+-include freertos_kernel/portable/MemMang/subdir_rules.mk
+-include libraries/3rdparty/mbedtls/library/subdir_rules.mk
+-include libraries/3rdparty/mbedtls_utils/subdir_rules.mk
+-include libraries/abstractions/pkcs11/corePKCS11/source/subdir_rules.mk
+-include libraries/abstractions/pkcs11/corePKCS11/source/portable/mbedtls/subdir_rules.mk
+-include libraries/abstractions/platform/freertos/subdir_rules.mk
+-include libraries/abstractions/retry_utils/freertos/subdir_rules.mk
+-include libraries/abstractions/transport/secure_sockets/subdir_rules.mk
+-include libraries/c_sdk/standard/common/subdir_rules.mk
+-include libraries/c_sdk/standard/common/taskpool/subdir_rules.mk
+-include libraries/coreMQTT/source/subdir_rules.mk
+-include libraries/freertos_plus/standard/crypto/src/subdir_rules.mk
+-include libraries/freertos_plus/standard/freertos_plus_posix/source/subdir_rules.mk
+-include libraries/freertos_plus/standard/utils/src/subdir_rules.mk
+-include libraries/logging/subdir_rules.mk
+-include vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/dpl/subdir_rules.mk
+-include vendors/ti/SimpleLink_CC32xx/v2_10_00_04/kernel/freertos/startup/subdir_rules.mk
+-include vendors/ti/boards/cc3220_launchpad/ports/pkcs11/subdir_rules.mk
+-include vendors/ti/boards/cc3220_launchpad/ports/secure_sockets/subdir_rules.mk
+-include vendors/ti/boards/cc3220_launchpad/ports/wifi/subdir_rules.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C55_DEPS)),)
+-include $(C55_DEPS)
+endif
+ifneq ($(strip $(C_UPPER_DEPS)),)
+-include $(C_UPPER_DEPS)
+endif
+ifneq ($(strip $(S67_DEPS)),)
+-include $(S67_DEPS)
+endif
+ifneq ($(strip $(S62_DEPS)),)
+-include $(S62_DEPS)
+endif
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
+endif
+ifneq ($(strip $(OPT_DEPS)),)
+-include $(OPT_DEPS)
+endif
+ifneq ($(strip $(C??_DEPS)),)
+-include $(C??_DEPS)
+endif
+ifneq ($(strip $(ASM_UPPER_DEPS)),)
+-include $(ASM_UPPER_DEPS)
+endif
+ifneq ($(strip $(S??_DEPS)),)
+-include $(S??_DEPS)
+endif
+ifneq ($(strip $(C64_DEPS)),)
+-include $(C64_DEPS)
+endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(S64_DEPS)),)
+-include $(S64_DEPS)
+endif
+ifneq ($(strip $(INO_DEPS)),)
+-include $(INO_DEPS)
+endif
+ifneq ($(strip $(CLA_DEPS)),)
+-include $(CLA_DEPS)
+endif
+ifneq ($(strip $(S55_DEPS)),)
+-include $(S55_DEPS)
+endif
+ifneq ($(strip $(SV7A_DEPS)),)
+-include $(SV7A_DEPS)
+endif
+ifneq ($(strip $(C62_DEPS)),)
+-include $(C62_DEPS)
+endif
+ifneq ($(strip $(C67_DEPS)),)
+-include $(C67_DEPS)
+endif
+ifneq ($(strip $(PDE_DEPS)),)
+-include $(PDE_DEPS)
+endif
+ifneq ($(strip $(K_DEPS)),)
+-include $(K_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(CC_DEPS)),)
+-include $(CC_DEPS)
+endif
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
+endif
+ifneq ($(strip $(C43_DEPS)),)
+-include $(C43_DEPS)
+endif
+ifneq ($(strip $(S43_DEPS)),)
+-include $(S43_DEPS)
+endif
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+ifneq ($(strip $(SA_DEPS)),)
+-include $(SA_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+EXE_OUTPUTS += \
+aws_demos.out \
+
+EXE_OUTPUTS__QUOTED += \
+"aws_demos.out" \
+
+BIN_OUTPUTS += \
+aws_demos.bin \
+
+BIN_OUTPUTS__QUOTED += \
+"aws_demos.bin" \
+
+
+# All Target
+all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+	@$(MAKE) --no-print-directory -Onone "aws_demos.out"
+
+# Tool invocations
+aws_demos.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+	@echo 'Building target: "$@"'
+	@echo 'Invoking: ARM Linker'
+	@echo 'Flags: -mv7M4 --code_state=16 --float_support=vfplib -me --define=MBEDTLS_CONFIG_FILE="<aws_mbedtls_config.h>" --define=CONFIG_MEDTLS_USE_AFR_MEMORY --define=CC3220sf -g --printf_support=full --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"aws_demos.map" --heap_size=0x0 --stack_size=0x512 -i"C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="aws_demos_linkInfo.xml" --rom_model'
+	$(shell echo -mv7M4 --code_state=16 --float_support=vfplib -me --define=MBEDTLS_CONFIG_FILE="<aws_mbedtls_config.h>" --define=CONFIG_MEDTLS_USE_AFR_MEMORY --define=CC3220sf -g --printf_support=full --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"aws_demos.map" --heap_size=0x0 --stack_size=0x512 -i"C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="aws_demos_linkInfo.xml" --rom_model > "ccsLinker.opt")
+	$(shell type "ccsObjs.opt" >> "ccsLinker.opt")
+	"C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -@"ccsLinker.opt" -o "aws_demos.out"
+	@echo 'Finished building target: "$@"'
+	@echo ' '
+	@$(MAKE) --no-print-directory post-build
+
+aws_demos.bin: $(EXE_OUTPUTS)
+	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Invoking: ARM Hex Utility'
+	"C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armhex"  -o "aws_demos.bin" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo ' '
+	@$(MAKE) --no-print-directory post-build
+
+# Other Targets
+clean:
+	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
+	-$(RM) "application_code\main.obj" "application_code\ti_code\CC3220SF_LAUNCHXL.obj" "application_code\ti_code\network_if.obj" "application_code\ti_code\uart_term.obj" "demos\coreMQTT\mqtt_demo_connection_sharing.obj" "demos\coreMQTT\mqtt_demo_mutual_auth.obj" "demos\demo_runner\aws_demo.obj" "demos\demo_runner\aws_demo_version.obj" "demos\demo_runner\iot_demo_freertos.obj" "demos\demo_runner\iot_demo_runner.obj" "demos\dev_mode_key_provisioning\src\aws_dev_mode_key_provisioning.obj" "demos\network_manager\aws_iot_demo_network.obj" "demos\network_manager\aws_iot_network_manager.obj" "demos\tcp\aws_tcp_echo_client_single_task.obj" "freertos_kernel\event_groups.obj" "freertos_kernel\list.obj" "freertos_kernel\queue.obj" "freertos_kernel\stream_buffer.obj" "freertos_kernel\tasks.obj" "freertos_kernel\timers.obj" "freertos_kernel\portable\CCS\ARM_CM3\port.obj" "freertos_kernel\portable\CCS\ARM_CM3\portasm.obj" "freertos_kernel\portable\MemMang\heap_4.obj" "libraries\3rdparty\mbedtls\library\aes.obj" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\aesni.obj" "libraries\3rdparty\mbedtls\library\arc4.obj" "libraries\3rdparty\mbedtls\library\aria.obj" "libraries\3rdparty\mbedtls\library\asn1parse.obj" "libraries\3rdparty\mbedtls\library\asn1write.obj" "libraries\3rdparty\mbedtls\library\base64.obj" "libraries\3rdparty\mbedtls\library\bignum.obj" "libraries\3rdparty\mbedtls\library\blowfish.obj" "libraries\3rdparty\mbedtls\library\camellia.obj" "libraries\3rdparty\mbedtls\library\ccm.obj" "libraries\3rdparty\mbedtls\library\certs.obj" "libraries\3rdparty\mbedtls\library\chacha20.obj" "libraries\3rdparty\mbedtls\library\chachapoly.obj" "libraries\3rdparty\mbedtls\library\cipher.obj" "libraries\3rdparty\mbedtls\library\cipher_wrap.obj" "libraries\3rdparty\mbedtls\library\cmac.obj" "libraries\3rdparty\mbedtls\library\ctr_drbg.obj" "libraries\3rdparty\mbedtls\library\debug.obj" "libraries\3rdparty\mbedtls\library\des.obj" "libraries\3rdparty\mbedtls\library\dhm.obj" "libraries\3rdparty\mbedtls\library\ecdh.obj" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\ecdsa.obj" "libraries\3rdparty\mbedtls\library\ecjpake.obj" "libraries\3rdparty\mbedtls\library\ecp.obj" "libraries\3rdparty\mbedtls\library\ecp_curves.obj" "libraries\3rdparty\mbedtls\library\entropy.obj" "libraries\3rdparty\mbedtls\library\entropy_poll.obj" "libraries\3rdparty\mbedtls\library\error.obj" "libraries\3rdparty\mbedtls\library\gcm.obj" "libraries\3rdparty\mbedtls\library\havege.obj" "libraries\3rdparty\mbedtls\library\hkdf.obj" "libraries\3rdparty\mbedtls\library\hmac_drbg.obj" "libraries\3rdparty\mbedtls\library\md.obj" "libraries\3rdparty\mbedtls\library\md2.obj" "libraries\3rdparty\mbedtls\library\md4.obj" "libraries\3rdparty\mbedtls\library\md5.obj" "libraries\3rdparty\mbedtls\library\md_wrap.obj" "libraries\3rdparty\mbedtls\library\memory_buffer_alloc.obj" "libraries\3rdparty\mbedtls\library\net_sockets.obj" "libraries\3rdparty\mbedtls\library\nist_kw.obj" "libraries\3rdparty\mbedtls\library\oid.obj" "libraries\3rdparty\mbedtls\library\padlock.obj" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\pem.obj" "libraries\3rdparty\mbedtls\library\pk.obj" "libraries\3rdparty\mbedtls\library\pk_wrap.obj" "libraries\3rdparty\mbedtls\library\pkcs11.obj" "libraries\3rdparty\mbedtls\library\pkcs12.obj" "libraries\3rdparty\mbedtls\library\pkcs5.obj" "libraries\3rdparty\mbedtls\library\pkparse.obj" "libraries\3rdparty\mbedtls\library\pkwrite.obj" "libraries\3rdparty\mbedtls\library\platform.obj" "libraries\3rdparty\mbedtls\library\platform_util.obj" "libraries\3rdparty\mbedtls\library\poly1305.obj" "libraries\3rdparty\mbedtls\library\ripemd160.obj" "libraries\3rdparty\mbedtls\library\rsa.obj" "libraries\3rdparty\mbedtls\library\rsa_internal.obj" "libraries\3rdparty\mbedtls\library\sha1.obj" "libraries\3rdparty\mbedtls\library\sha256.obj" "libraries\3rdparty\mbedtls\library\sha512.obj" "libraries\3rdparty\mbedtls\library\ssl_cache.obj" "libraries\3rdparty\mbedtls\library\ssl_ciphersuites.obj" "libraries\3rdparty\mbedtls\library\ssl_cli.obj" "libraries\3rdparty\mbedtls\library\ssl_cookie.obj" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\ssl_srv.obj" "libraries\3rdparty\mbedtls\library\ssl_ticket.obj" "libraries\3rdparty\mbedtls\library\ssl_tls.obj" "libraries\3rdparty\mbedtls\library\threading.obj" "libraries\3rdparty\mbedtls\library\timing.obj" "libraries\3rdparty\mbedtls\library\version.obj" "libraries\3rdparty\mbedtls\library\version_features.obj" "libraries\3rdparty\mbedtls\library\x509.obj" "libraries\3rdparty\mbedtls\library\x509_create.obj" "libraries\3rdparty\mbedtls\library\x509_crl.obj" "libraries\3rdparty\mbedtls\library\x509_crt.obj" "libraries\3rdparty\mbedtls\library\x509_csr.obj" "libraries\3rdparty\mbedtls\library\x509write_crt.obj" "libraries\3rdparty\mbedtls\library\x509write_csr.obj" "libraries\3rdparty\mbedtls\library\xtea.obj" "libraries\3rdparty\mbedtls_utils\mbedtls_error.obj" "libraries\3rdparty\mbedtls_utils\mbedtls_utils.obj" "libraries\abstractions\pkcs11\corePKCS11\source\core_pkcs11.obj" "libraries\abstractions\pkcs11\corePKCS11\source\core_pki_utils.obj" 
+	-$(RM) "libraries\abstractions\pkcs11\corePKCS11\source\portable\mbedtls\core_pkcs11_mbedtls.obj" "libraries\abstractions\platform\freertos\iot_clock_freertos.obj" "libraries\abstractions\platform\freertos\iot_metrics.obj" "libraries\abstractions\platform\freertos\iot_network_freertos.obj" "libraries\abstractions\platform\freertos\iot_threads_freertos.obj" "libraries\abstractions\retry_utils\freertos\retry_utils_freertos.obj" "libraries\abstractions\transport\secure_sockets\transport_secure_sockets.obj" "libraries\c_sdk\standard\common\iot_device_metrics.obj" "libraries\c_sdk\standard\common\iot_init.obj" "libraries\c_sdk\standard\common\iot_static_memory_common.obj" "libraries\c_sdk\standard\common\taskpool\iot_taskpool.obj" "libraries\c_sdk\standard\common\taskpool\iot_taskpool_static_memory.obj" "libraries\coreMQTT\source\core_mqtt.obj" "libraries\coreMQTT\source\core_mqtt_serializer.obj" "libraries\coreMQTT\source\core_mqtt_state.obj" "libraries\freertos_plus\standard\crypto\src\iot_crypto.obj" 
+	-$(RM) "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_clock.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_mqueue.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_barrier.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_cond.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_mutex.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_sched.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_semaphore.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_timer.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_unistd.obj" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_utils.obj" "libraries\freertos_plus\standard\utils\src\iot_system_init.obj" 
+	-$(RM) "libraries\logging\iot_logging.obj" "libraries\logging\iot_logging_task_dynamic_buffers.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\ClockP_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\DebugP_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\HwiPCC32XX_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\MutexP_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\PowerCC32XX_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\SemaphoreP_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\SystemP_freertos.obj" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\startup\startup_cc32xx_ccs.obj" "vendors\ti\boards\cc3220_launchpad\ports\pkcs11\core_pkcs11_pal.obj" "vendors\ti\boards\cc3220_launchpad\ports\secure_sockets\iot_secure_sockets.obj" "vendors\ti\boards\cc3220_launchpad\ports\wifi\iot_wifi.obj" 
+	-$(RM) "application_code\main.d" "application_code\ti_code\CC3220SF_LAUNCHXL.d" "application_code\ti_code\network_if.d" "application_code\ti_code\uart_term.d" "demos\coreMQTT\mqtt_demo_connection_sharing.d" "demos\coreMQTT\mqtt_demo_mutual_auth.d" "demos\demo_runner\aws_demo.d" "demos\demo_runner\aws_demo_version.d" "demos\demo_runner\iot_demo_freertos.d" "demos\demo_runner\iot_demo_runner.d" "demos\dev_mode_key_provisioning\src\aws_dev_mode_key_provisioning.d" "demos\network_manager\aws_iot_demo_network.d" "demos\network_manager\aws_iot_network_manager.d" "demos\tcp\aws_tcp_echo_client_single_task.d" "freertos_kernel\event_groups.d" "freertos_kernel\list.d" "freertos_kernel\queue.d" "freertos_kernel\stream_buffer.d" "freertos_kernel\tasks.d" "freertos_kernel\timers.d" "freertos_kernel\portable\CCS\ARM_CM3\port.d" "freertos_kernel\portable\MemMang\heap_4.d" "libraries\3rdparty\mbedtls\library\aes.d" "libraries\3rdparty\mbedtls\library\aesni.d" "libraries\3rdparty\mbedtls\library\arc4.d" "libraries\3rdparty\mbedtls\library\aria.d" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\asn1parse.d" "libraries\3rdparty\mbedtls\library\asn1write.d" "libraries\3rdparty\mbedtls\library\base64.d" "libraries\3rdparty\mbedtls\library\bignum.d" "libraries\3rdparty\mbedtls\library\blowfish.d" "libraries\3rdparty\mbedtls\library\camellia.d" "libraries\3rdparty\mbedtls\library\ccm.d" "libraries\3rdparty\mbedtls\library\certs.d" "libraries\3rdparty\mbedtls\library\chacha20.d" "libraries\3rdparty\mbedtls\library\chachapoly.d" "libraries\3rdparty\mbedtls\library\cipher.d" "libraries\3rdparty\mbedtls\library\cipher_wrap.d" "libraries\3rdparty\mbedtls\library\cmac.d" "libraries\3rdparty\mbedtls\library\ctr_drbg.d" "libraries\3rdparty\mbedtls\library\debug.d" "libraries\3rdparty\mbedtls\library\des.d" "libraries\3rdparty\mbedtls\library\dhm.d" "libraries\3rdparty\mbedtls\library\ecdh.d" "libraries\3rdparty\mbedtls\library\ecdsa.d" "libraries\3rdparty\mbedtls\library\ecjpake.d" "libraries\3rdparty\mbedtls\library\ecp.d" "libraries\3rdparty\mbedtls\library\ecp_curves.d" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\entropy.d" "libraries\3rdparty\mbedtls\library\entropy_poll.d" "libraries\3rdparty\mbedtls\library\error.d" "libraries\3rdparty\mbedtls\library\gcm.d" "libraries\3rdparty\mbedtls\library\havege.d" "libraries\3rdparty\mbedtls\library\hkdf.d" "libraries\3rdparty\mbedtls\library\hmac_drbg.d" "libraries\3rdparty\mbedtls\library\md.d" "libraries\3rdparty\mbedtls\library\md2.d" "libraries\3rdparty\mbedtls\library\md4.d" "libraries\3rdparty\mbedtls\library\md5.d" "libraries\3rdparty\mbedtls\library\md_wrap.d" "libraries\3rdparty\mbedtls\library\memory_buffer_alloc.d" "libraries\3rdparty\mbedtls\library\net_sockets.d" "libraries\3rdparty\mbedtls\library\nist_kw.d" "libraries\3rdparty\mbedtls\library\oid.d" "libraries\3rdparty\mbedtls\library\padlock.d" "libraries\3rdparty\mbedtls\library\pem.d" "libraries\3rdparty\mbedtls\library\pk.d" "libraries\3rdparty\mbedtls\library\pk_wrap.d" "libraries\3rdparty\mbedtls\library\pkcs11.d" "libraries\3rdparty\mbedtls\library\pkcs12.d" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\pkcs5.d" "libraries\3rdparty\mbedtls\library\pkparse.d" "libraries\3rdparty\mbedtls\library\pkwrite.d" "libraries\3rdparty\mbedtls\library\platform.d" "libraries\3rdparty\mbedtls\library\platform_util.d" "libraries\3rdparty\mbedtls\library\poly1305.d" "libraries\3rdparty\mbedtls\library\ripemd160.d" "libraries\3rdparty\mbedtls\library\rsa.d" "libraries\3rdparty\mbedtls\library\rsa_internal.d" "libraries\3rdparty\mbedtls\library\sha1.d" "libraries\3rdparty\mbedtls\library\sha256.d" "libraries\3rdparty\mbedtls\library\sha512.d" "libraries\3rdparty\mbedtls\library\ssl_cache.d" "libraries\3rdparty\mbedtls\library\ssl_ciphersuites.d" "libraries\3rdparty\mbedtls\library\ssl_cli.d" "libraries\3rdparty\mbedtls\library\ssl_cookie.d" "libraries\3rdparty\mbedtls\library\ssl_srv.d" "libraries\3rdparty\mbedtls\library\ssl_ticket.d" "libraries\3rdparty\mbedtls\library\ssl_tls.d" "libraries\3rdparty\mbedtls\library\threading.d" "libraries\3rdparty\mbedtls\library\timing.d" 
+	-$(RM) "libraries\3rdparty\mbedtls\library\version.d" "libraries\3rdparty\mbedtls\library\version_features.d" "libraries\3rdparty\mbedtls\library\x509.d" "libraries\3rdparty\mbedtls\library\x509_create.d" "libraries\3rdparty\mbedtls\library\x509_crl.d" "libraries\3rdparty\mbedtls\library\x509_crt.d" "libraries\3rdparty\mbedtls\library\x509_csr.d" "libraries\3rdparty\mbedtls\library\x509write_crt.d" "libraries\3rdparty\mbedtls\library\x509write_csr.d" "libraries\3rdparty\mbedtls\library\xtea.d" "libraries\3rdparty\mbedtls_utils\mbedtls_error.d" "libraries\3rdparty\mbedtls_utils\mbedtls_utils.d" "libraries\abstractions\pkcs11\corePKCS11\source\core_pkcs11.d" "libraries\abstractions\pkcs11\corePKCS11\source\core_pki_utils.d" "libraries\abstractions\pkcs11\corePKCS11\source\portable\mbedtls\core_pkcs11_mbedtls.d" "libraries\abstractions\platform\freertos\iot_clock_freertos.d" "libraries\abstractions\platform\freertos\iot_metrics.d" "libraries\abstractions\platform\freertos\iot_network_freertos.d" 
+	-$(RM) "libraries\abstractions\platform\freertos\iot_threads_freertos.d" "libraries\abstractions\retry_utils\freertos\retry_utils_freertos.d" "libraries\abstractions\transport\secure_sockets\transport_secure_sockets.d" "libraries\c_sdk\standard\common\iot_device_metrics.d" "libraries\c_sdk\standard\common\iot_init.d" "libraries\c_sdk\standard\common\iot_static_memory_common.d" "libraries\c_sdk\standard\common\taskpool\iot_taskpool.d" "libraries\c_sdk\standard\common\taskpool\iot_taskpool_static_memory.d" "libraries\coreMQTT\source\core_mqtt.d" "libraries\coreMQTT\source\core_mqtt_serializer.d" "libraries\coreMQTT\source\core_mqtt_state.d" "libraries\freertos_plus\standard\crypto\src\iot_crypto.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_clock.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_mqueue.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_barrier.d" 
+	-$(RM) "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_cond.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_mutex.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_sched.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_semaphore.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_timer.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_unistd.d" "libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_utils.d" "libraries\freertos_plus\standard\utils\src\iot_system_init.d" "libraries\logging\iot_logging.d" "libraries\logging\iot_logging_task_dynamic_buffers.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\ClockP_freertos.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\DebugP_freertos.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\HwiPCC32XX_freertos.d" 
+	-$(RM) "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\MutexP_freertos.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\PowerCC32XX_freertos.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\SemaphoreP_freertos.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\dpl\SystemP_freertos.d" "vendors\ti\SimpleLink_CC32xx\v2_10_00_04\kernel\freertos\startup\startup_cc32xx_ccs.d" "vendors\ti\boards\cc3220_launchpad\ports\pkcs11\core_pkcs11_pal.d" "vendors\ti\boards\cc3220_launchpad\ports\secure_sockets\iot_secure_sockets.d" "vendors\ti\boards\cc3220_launchpad\ports\wifi\iot_wifi.d" 
+	-$(RM) "freertos_kernel\portable\CCS\ARM_CM3\portasm.d" 
+	-@echo 'Finished clean'
+	-@echo ' '
+
+post-build:
+	-C:/ti/ccs/ccs/utils/tiobj2bin/tiobj2bin aws_demos.out aws_demos.bin C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armofd C:/ti/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armhex C:/ti/ccs/ccs/utils/tiobj2bin/mkhex4bin
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets
+

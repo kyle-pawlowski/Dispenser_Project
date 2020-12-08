@@ -1,0 +1,56 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/freertos_kernel/event_groups.c \
+C:/ti/FreeRTOS/freertos_kernel/list.c \
+C:/ti/FreeRTOS/freertos_kernel/queue.c \
+C:/ti/FreeRTOS/freertos_kernel/stream_buffer.c \
+C:/ti/FreeRTOS/freertos_kernel/tasks.c \
+C:/ti/FreeRTOS/freertos_kernel/timers.c 
+
+C_DEPS += \
+./freertos_kernel/event_groups.d \
+./freertos_kernel/list.d \
+./freertos_kernel/queue.d \
+./freertos_kernel/stream_buffer.d \
+./freertos_kernel/tasks.d \
+./freertos_kernel/timers.d 
+
+OBJS += \
+./freertos_kernel/event_groups.obj \
+./freertos_kernel/list.obj \
+./freertos_kernel/queue.obj \
+./freertos_kernel/stream_buffer.obj \
+./freertos_kernel/tasks.obj \
+./freertos_kernel/timers.obj 
+
+OBJS__QUOTED += \
+"freertos_kernel\event_groups.obj" \
+"freertos_kernel\list.obj" \
+"freertos_kernel\queue.obj" \
+"freertos_kernel\stream_buffer.obj" \
+"freertos_kernel\tasks.obj" \
+"freertos_kernel\timers.obj" 
+
+C_DEPS__QUOTED += \
+"freertos_kernel\event_groups.d" \
+"freertos_kernel\list.d" \
+"freertos_kernel\queue.d" \
+"freertos_kernel\stream_buffer.d" \
+"freertos_kernel\tasks.d" \
+"freertos_kernel\timers.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/freertos_kernel/event_groups.c" \
+"C:/ti/FreeRTOS/freertos_kernel/list.c" \
+"C:/ti/FreeRTOS/freertos_kernel/queue.c" \
+"C:/ti/FreeRTOS/freertos_kernel/stream_buffer.c" \
+"C:/ti/FreeRTOS/freertos_kernel/tasks.c" \
+"C:/ti/FreeRTOS/freertos_kernel/timers.c" 
+
+

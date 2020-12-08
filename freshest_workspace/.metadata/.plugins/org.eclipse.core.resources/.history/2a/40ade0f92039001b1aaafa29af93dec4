@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/abstractions/pkcs11/corePKCS11/source/core_pkcs11.c \
+C:/ti/FreeRTOS/libraries/abstractions/pkcs11/corePKCS11/source/core_pki_utils.c 
+
+C_DEPS += \
+./libraries/abstractions/pkcs11/corePKCS11/source/core_pkcs11.d \
+./libraries/abstractions/pkcs11/corePKCS11/source/core_pki_utils.d 
+
+OBJS += \
+./libraries/abstractions/pkcs11/corePKCS11/source/core_pkcs11.obj \
+./libraries/abstractions/pkcs11/corePKCS11/source/core_pki_utils.obj 
+
+OBJS__QUOTED += \
+"libraries\abstractions\pkcs11\corePKCS11\source\core_pkcs11.obj" \
+"libraries\abstractions\pkcs11\corePKCS11\source\core_pki_utils.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\abstractions\pkcs11\corePKCS11\source\core_pkcs11.d" \
+"libraries\abstractions\pkcs11\corePKCS11\source\core_pki_utils.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/abstractions/pkcs11/corePKCS11/source/core_pkcs11.c" \
+"C:/ti/FreeRTOS/libraries/abstractions/pkcs11/corePKCS11/source/core_pki_utils.c" 
+
+

@@ -1,0 +1,86 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_clock.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_mqueue.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_barrier.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_cond.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_mutex.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_sched.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_semaphore.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_timer.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_unistd.c \
+C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_utils.c 
+
+C_DEPS += \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_clock.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_mqueue.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_barrier.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_cond.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_mutex.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_sched.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_semaphore.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_timer.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_unistd.d \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_utils.d 
+
+OBJS += \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_clock.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_mqueue.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_barrier.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_cond.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_mutex.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_sched.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_semaphore.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_timer.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_unistd.obj \
+./libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_utils.obj 
+
+OBJS__QUOTED += \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_clock.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_mqueue.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_barrier.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_cond.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_mutex.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_sched.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_semaphore.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_timer.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_unistd.obj" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_utils.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_clock.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_mqueue.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_barrier.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_cond.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_pthread_mutex.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_sched.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_semaphore.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_timer.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_unistd.d" \
+"libraries\freertos_plus\standard\freertos_plus_posix\source\FreeRTOS_POSIX_utils.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_clock.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_mqueue.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_barrier.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_cond.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_pthread_mutex.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_sched.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_semaphore.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_timer.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_unistd.c" \
+"C:/ti/FreeRTOS/libraries/freertos_plus/standard/freertos_plus_posix/source/FreeRTOS_POSIX_utils.c" 
+
+

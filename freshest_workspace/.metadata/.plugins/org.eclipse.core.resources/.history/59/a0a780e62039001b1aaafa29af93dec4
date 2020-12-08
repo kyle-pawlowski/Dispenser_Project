@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/demos/tcp/aws_tcp_echo_client_single_task.c 
+
+C_DEPS += \
+./demos/tcp/aws_tcp_echo_client_single_task.d 
+
+OBJS += \
+./demos/tcp/aws_tcp_echo_client_single_task.obj 
+
+OBJS__QUOTED += \
+"demos\tcp\aws_tcp_echo_client_single_task.obj" 
+
+C_DEPS__QUOTED += \
+"demos\tcp\aws_tcp_echo_client_single_task.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/demos/tcp/aws_tcp_echo_client_single_task.c" 
+
+

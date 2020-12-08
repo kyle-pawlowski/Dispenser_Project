@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/libraries/3rdparty/mbedtls_utils/mbedtls_error.c \
+C:/ti/FreeRTOS/libraries/3rdparty/mbedtls_utils/mbedtls_utils.c 
+
+C_DEPS += \
+./libraries/3rdparty/mbedtls_utils/mbedtls_error.d \
+./libraries/3rdparty/mbedtls_utils/mbedtls_utils.d 
+
+OBJS += \
+./libraries/3rdparty/mbedtls_utils/mbedtls_error.obj \
+./libraries/3rdparty/mbedtls_utils/mbedtls_utils.obj 
+
+OBJS__QUOTED += \
+"libraries\3rdparty\mbedtls_utils\mbedtls_error.obj" \
+"libraries\3rdparty\mbedtls_utils\mbedtls_utils.obj" 
+
+C_DEPS__QUOTED += \
+"libraries\3rdparty\mbedtls_utils\mbedtls_error.d" \
+"libraries\3rdparty\mbedtls_utils\mbedtls_utils.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/libraries/3rdparty/mbedtls_utils/mbedtls_error.c" \
+"C:/ti/FreeRTOS/libraries/3rdparty/mbedtls_utils/mbedtls_utils.c" 
+
+

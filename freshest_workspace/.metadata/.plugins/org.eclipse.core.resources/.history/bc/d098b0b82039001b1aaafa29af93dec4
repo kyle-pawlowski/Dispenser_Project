@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/FreeRTOS/demos/coreMQTT/mqtt_demo_connection_sharing.c \
+C:/ti/FreeRTOS/demos/coreMQTT/mqtt_demo_mutual_auth.c 
+
+C_DEPS += \
+./demos/coreMQTT/mqtt_demo_connection_sharing.d \
+./demos/coreMQTT/mqtt_demo_mutual_auth.d 
+
+OBJS += \
+./demos/coreMQTT/mqtt_demo_connection_sharing.obj \
+./demos/coreMQTT/mqtt_demo_mutual_auth.obj 
+
+OBJS__QUOTED += \
+"demos\coreMQTT\mqtt_demo_connection_sharing.obj" \
+"demos\coreMQTT\mqtt_demo_mutual_auth.obj" 
+
+C_DEPS__QUOTED += \
+"demos\coreMQTT\mqtt_demo_connection_sharing.d" \
+"demos\coreMQTT\mqtt_demo_mutual_auth.d" 
+
+C_SRCS__QUOTED += \
+"C:/ti/FreeRTOS/demos/coreMQTT/mqtt_demo_connection_sharing.c" \
+"C:/ti/FreeRTOS/demos/coreMQTT/mqtt_demo_mutual_auth.c" 
+
+
